@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fitness Hub</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #navbar {
+        display: flex;
+      }
+      img {
+        height: 120px;
+        width: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+      .item {
+        display: inline;
+        padding: 25px;
+        margin-top: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 20px;
+        color: white;
+        list-style: none;
+      }
+      .item a {
+        text-decoration: none;
+        color: white;
+      }
+      .item a:hover {
+        color: blue;
+        background-color: white;
+        border-radius: 2px;
+      }
+      .home p{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .h-primary {
+        display: flex;
+        font-size: 89px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 2px;
+        opacity: 218.8;
+        background-color: black;
+        display: flex;
+        flex-wrap:wrap;
+      }
+      .h-primary-center {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 50px;
+        font-family: "Courier New", Courier, monospace;
+        margin-top: 50px;
+        display:flex;
+        flex-wrap: wrap;
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        margin-top: 50px;
+        font-family: math;
+        opacity: 71.8;
+        color: white;
+      }
+      .hero_section {
+        background: url("./img/bggym.jpg");
+        height: 613px;
+         background-repeat:no-repeat; 
+         background-position: center; 
+         background-size:cover; 
+
+      }
+
+      .card1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid red;
+        border-radius: 5px;
+        height: 285px;
+        width: 303px;
+        align-content: baseline;
+        margin-left: 132px;
+        margin-top: 40px;
+        transition: all 0.4s ease;
+        padding: 2px;
+      }
+      .card2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid red;
+        border-radius: 5px;
+        height: 285px;
+        width: 303px;
+        align-content: baseline;
+        margin-left: 132px;
+        margin-top: 40px;
+        transition: all 0.4s ease;
+        padding: 2px;
+      }
+      .card1 img {
+        height: 160px;
+        width: 296px;
+        border-radius: 2px;
+      }
+      .card1 p{
+        font-size: 18px;
+      }
+      .card1:hover {
+        transform: scale(0.7);
+      }
+      .card2 img {
+        height: 160px;
+        width: 296px;
+        border-radius: 2px;
+      }
+      .card2 p {
+        font-size: 18px;
+      }
+      .card2:hover {
+        transform: scale(0.7);
+      }
+      .card3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid red;
+        border-radius: 5px;
+        height: 285px;
+        width: 303px;
+        align-content: baseline;
+        margin-left: 132px;
+        margin-top: 40px;
+        transition: all 0.4s ease;
+        padding: 2px;
+      }
+      .card3 img {
+        height: 160px;
+        width: 296px;
+        border-radius: 2px;
+      }
+      .card3 p {
+        font-size: 18px;
+      }
+      .card3:hover {
+        transform: scale(0.7);
+      }
+      .card4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid red;
+        border-radius: 5px;
+        height: 285px;
+        width: 303px;
+        align-content: baseline;
+        margin-left: 132px;
+        margin-top: 40px;
+        transition: all 0.4s ease;
+        padding: 2px;
+      }
+      .card4 img {
+        height: 160px;
+        width: 296px;
+        border-radius: 2px;
+      }
+      .card4 p {
+        font-size: 18px;
+      }
+      .card4:hover {
+        transform: scale(0.7);
+      }
+      .section-card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .member{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 50px;
+        font-family: "Courier New", Courier, monospace;
+        margin-top: 50px;
+      }
+      .paisa{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 13px;
+        
+      }    
+      .card11{
+        font-size: 85px;
+        font-family: bold;
+        height: 153px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid red;
+        border-radius: 3px;
+        height: 227px;
+        width: 232px;
+        margin-left: 20px; 
+        flex-direction: column;
+        transition: all 0.4s ease;
+      }
+      .card11:hover{
+        transform: scale(0.7);
+      }
+      
+      .card12{
+        font-size: 85px;
+        font-family: bold;
+        height: 153px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid red;
+        border-radius: 3px;
+        height: 227px;
+        width: 0232px;
+        margin-left: 20px; 
+        flex-direction: column;
+        transition: all 0.4s ease;
+      }
+      .card12:hover{
+        transform: scale(0.7);
+      }
+      .card13{
+        font-size: 85px;
+        font-family: bold;
+        height: 153px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid red;
+        border-radius: 3px;
+        height: 227px;
+        width: 232px;
+        margin-left: 20px; 
+        flex-direction: column;
+        transition: all 0.4s ease;
+      }
+      .card13:hover{
+        transform: scale(0.7);
+      }
+      .card14{
+        font-size: 85px;
+        font-family: bold;
+        height: 153px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid red;
+        border-radius: 3px;
+        height: 227px;
+        width: 232px;
+        margin-left: 20px; 
+        flex-direction: column;
+        transition: all 0.4s ease;
+      }
+      .card14:hover{
+        transform: scale(0.7);
+      }
+      .paisa h3{
+       font-size: 40px;
+      }
+      .area {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        max-width: 89%;
+        text-align: center;
+        height: 10rem;
+        cursor: pointer;
+      }
+      .area_link {
+        border-radius: 8px;
+        padding: 12px 21px;
+        border: 2px solid grey;
+        margin: 0px 4px;
+        width: 20rem;
+      }
+      .area{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .section-container{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero_section">
+      <nav id="navbar">
+        <div class="logo">
+          <img src="./img/logogym.png" alt="Fitness Hub" />
+        </div>
+        <ul>
+          <li class="item"><a href="">HOME</a></li>
+          <li class="item"><a href="">CONTACT US</a></li>
+          <li class="item"><a href="">SHOPPING</a></li>
+          <li class="item"><a href="">MEMBERSHIP</a></li>
+        </ul>
+      </nav>
+
+      <section id="home">
+        <h1 class="h-primary">Join Us NOW</h1>
+        <p>
+          "Your body is your most priceless possession. Take care of it at our
+          gym."
+        </p>
+      </section>
+    </section>
+
+    <section class="section-container">
+      <h1 class="h-primary-center">Our Services</h1>
+      <section class="section-card">
+      <div class="card1">
+        <img src="./img/weight.jpg" alt="" />
+        <h2 class="h-secondary center">Weight training</h2>
+        <p>The pain you feel today will be the strength you feel tomorrow</p>
+      </div>
+      <div class="card2">
+        <img src="./img/cardio.jpg" alt="" />
+        <h2 class="h-secondary-center">Cardio section</h2>
+        <p>Sweat now, shine later.</p>
+      </div>
+      <div class="card3">
+        <img src="./img/yoga.jpg" alt="" />
+        <h2 class="h-secondary-center">Yoga section</h2>
+        <p>Yoga is the journey of the self, through the self, to the self</p>
+      </div>
+      <div class="card4">
+          <img src="./img/powerlift.jpg" alt="" />
+          <h2 class="h-secondary-center">Power Lifting</h2>
+          <p>The pain of discipline is far less than the pain of regret.</p>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section class="membership">
+      <h2 class="member">Our Membership Plans</h2>
+      <div class="paisa">
+        <div class="card11">
+            <div class="card111">₹500</div>
+            <h3><strong>For 1 month</strong></h3>
+        </div>
+         <div class="card12">
+            <div class="card122">₹1000</div>
+            <h3><strong>For 3 month</strong></h3>
+         </div>
+          <div class="card13">
+          <div class="card133">₹2000</div>
+          <h3><strong>For 5 month</strong></h3>
+        </div>
+        <div class="card14">
+       <div class="card144">₹5000</div>
+        <h3><strong>For 12 month</strong></h3>
+      </div>
+    </div>
+    </section>
+    <div class="titel">
+      <h1>Our Branches In Kolkata</h1>
+      <div class="area">
+        <div class="area_link">
+          <h2>Park Street</h2>
+        </div>
+        <div class="area_link">
+          <h2>Ballygunge</h2>
+          
+        </div>
+        <div class="area_link">
+          <h2>Naktala</h2>
+          
+        </div>
+        <div class="area_link">
+          <h2>Southern Avenue</h2>
+          
+        </div>
+        <div class="area_link">
+          <h2>Tollyguange</h2>
+          
+        </div>
+        <div class="area_link">
+          <h2>New Town</h2>
+                  </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
